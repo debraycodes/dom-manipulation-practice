@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <form id="form">
-      <input id="input">
-      <button type="submit">Add Todo</button>
-    </form>
+    <nav class="navbar bg-info">
+      <form id="form" class="form-inline">
+        <div class="form-group">
+          <input class="form-control" id="input" placeholder="Add item">
+        </div>
+        <button type="submit" class="btn-secondary">Add Todo</button>
+      </form>
+    </nav>
     Tasks
-    <ul id="todo-list"></ul>
-
+    <ul class="list-group" id="todo-list"></ul>
   </body>
 </html>
